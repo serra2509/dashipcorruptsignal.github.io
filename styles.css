@@ -1,0 +1,259 @@
+﻿/* === TIPOGRAFÍA === */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #ddd;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, nav a {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+/* === NAVBAR === */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  z-index: 1000;
+  animation: slideDownFade 0.8s ease-out forwards;
+}
+
+/* Animación */
+@keyframes slideDownFade {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+nav .logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff416c;
+}
+
+/* === VIDEO HEADER === */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #ddd;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  background-image: url('Escenarios/Escenario2.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+video {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.video-section {
+  margin-top:100px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.video-section video {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* === SECCIONES === */
+.section {
+  padding: 60px 120px;
+  text-align: center;
+  background-color: #111;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-center img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* === BOTONES === */
+.vote-button-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.vote-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  border-radius: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px rgba(142, 45, 226, 0.5);
+}
+
+.vote-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(142, 45, 226, 0.8);
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: slideDownFade 0.8s ease-out forwards;
+  opacity: 0; 
+}
+
+/* === AGRADECIMIENTO === */
+.thank-you {
+  margin-top: 90px;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #111;
+
+  /* Animación */
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
