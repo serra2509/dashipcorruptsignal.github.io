@@ -256,4 +256,26 @@ nav {
   }
 }
 
+.vote-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #ccc;
+  text-decoration: none;
+  border: 1px solid #444;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.vote-link:hover {
+  color: #fff;
+  border-color: #ff416c;
+  background-color: rgba(255, 65, 108, 0.1);
+  box-shadow: 0 0 8px rgba(255, 65, 108, 0.3);
+}
+
+
 
