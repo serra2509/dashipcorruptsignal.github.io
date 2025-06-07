@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -7,27 +7,46 @@
   <link rel="shortcut icon" href="Tipografía/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Exo+2:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 1200px;
+    }
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '683113794498800');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=683113794498800&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
 
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .boletas-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #111;
+    }
+
+    .boletas-section h2 {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-
 <body>
 
 <nav>
@@ -44,11 +63,25 @@ src="https://www.facebook.com/tr?id=683113794498800&ev=PageView&noscript=1"
   <p>Gracias por explorar el universo de Daship. Tu voto vale mucho y hace que este juego esté un paso más cerca de hacerse realidad. :)</p>
 </section>
 
-  <footer>
-    <p>&copy; 2025 Daship Studios</p>
-    <p>Contacto: serra.a@usal.edu.ar</p>
-    <p>Síguenos en redes sociales</p>
-  </footer>
+<section class="boletas-section">
+  <h2>Otros juegos</h2>
+  <div class="grid">
+    <div class="card"><img src="Agradecimiento/CA.png" alt="CA"><a href="https://garaydelriom.wixsite.com/chikasadventure" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/DW.png" alt="DW"><a href="https://arodriguezvaliente.wixsite.com/dronewar" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/ES.png" alt="ES"><a href="https://pbricenodagger1.wixstudio.com/el-saltamonje" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/GB.png" alt="GB"><a href="https://marquezm143.wixsite.com/golden-beauty" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/IDWAHL.png" alt="IDWAHL"><a href="https://victoriaalthabe.wixsite.com/misitio" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/MFC.png" alt="MFC"><a href="https://pipapape.wixsite.com/momfightingclub" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/MRO.PNG" alt="MRO"><a href="https://andresmora03.wixsite.com/mechs-r-overrated" class="vote-link">VOTAR</a></div>
+    <div class="card"><img src="Agradecimiento/SC.png" alt="SC"><a href="https://leonardoezequielor.wixsite.com/spellcialthesacredba" class="vote-link">VOTAR</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Daship Studios</p>
+  <p>Contacto: serra.a@usal.edu.ar</p>
+  <p>Síguenos en redes sociales</p>
+</footer>
 
 </body>
 </html>
