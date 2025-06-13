@@ -288,6 +288,7 @@ nav {
 .features-list {
   display: flex;
   justify-content: center;
+  text-align: left;
   gap: 60px;
   flex-wrap: wrap;
   animation: fadeInUp 1s ease-out forwards;
