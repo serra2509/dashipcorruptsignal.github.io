@@ -277,5 +277,30 @@ nav {
   box-shadow: 0 0 8px rgba(255, 65, 108, 0.3);
 }
 
+.features-section h2 {
+  color: #fff;
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  list-style-type: disc;
+  padding-left: 2rem;
+  gap: 1rem;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.features-list li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
 
 
